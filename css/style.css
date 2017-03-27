@@ -1,0 +1,482 @@
+/* General */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+
+/* Header */
+
+
+header{
+	height: 745px;
+	width: 1280px;
+	background: url(../images/headerbg.jpg);
+	background-size: 100%;
+	display: flex;
+	flex-direction: row;	
+	justify-content: center;
+	color: #ffffff;
+}
+header .wrapper{
+	width: 760px;
+	height: 100%;
+	margin: 0 auto;
+}
+header nav{
+	height: 55px;
+	padding-top: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+nav li{
+	float: left;
+}
+
+header nav .nav-left{
+	margin: 30px 29px 9px 10px;
+}
+header nav .nav-right{
+	margin: 30px 10px 9px 29px;
+}
+#camera{
+	margin-left: 80px;
+	margin-right: 80px;
+}
+@font-face{
+	font-family: GothmRoundedBold;
+	src:url(../fonts/GothamRoundedBold.ttf);
+}
+nav a{
+	font-size: 16px;
+	font-family: GothmRoundedBold;
+	letter-spacing: 3px;
+	color: #ffffff;
+}
+.title{
+	margin-top: 239px;
+}
+.title h1{
+	margin-left: 4px;
+	font-size: 36px;
+	font-family: GothmRoundedBold;
+	text-align: center;
+	letter-spacing: 5.3px;
+}
+@font-face{
+	font-family: GothmRoundedMedium;
+	src:url(../fonts/GothamRoundedMedium.ttf);
+}
+.title h2{
+	font-size: 16px;
+	font-family: GothmRoundedMedium;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 4px;
+	letter-spacing: 2.5px;
+}
+.btn-start{
+	width: 166px;
+	height: 50px;
+	margin: 23px auto;
+	font-size: 12px;
+	font-family: GothmRoundedBold;
+	font-weight: bold;	
+	letter-spacing: 2px;
+	border-radius: 3px;
+	border: none;
+	background-color: #16a085;
+
+	color: #ffffff;
+}
+header .btn-start{
+	display: flex;
+	justify-content: center;
+}
+.net-icons{
+	margin-top: 222px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.ico{
+	width:23px;
+	height:21px;
+	display: block;
+	background: url(../images/sprite.png) no-repeat 0 0;
+}
+#fi{
+	background-position: -39px 0;	
+	margin-left: 15px;
+	margin-right: 15px;
+}
+#dr{
+	background-position: -78px 0;
+}
+
+
+/* Section 1 */
+
+
+#sec-first{
+	height: 492px;
+	width: 1280px;
+	background-color: #f5f6f7;
+	text-align: left;
+}
+#sec-first .wrapper{
+	float:left;
+	margin: 110px 0px 0px 128px;
+}
+#sec-first h2{
+	color: #16a085;
+	font-family: GothmRoundedBold;
+	font-size: 18px;
+	letter-spacing: 2.7px;
+}
+@font-face{
+	font-family: GothmRoundedBook;
+	src:url(../fonts/gothamrounded-book-webfont.ttf);
+}
+#sec-first p{
+	color:#373737;
+	font-size: 12px;
+	font-family: GothmRoundedBook;	
+    line-height: 24px;
+    margin-top: 38px;
+    letter-spacing: 1.83px;
+}
+#sec-first strong{
+	font-family: GothmRoundedBold;
+}
+#sec-first aside{
+	margin-top: 92px;
+    position: absolute;
+    margin-left: 502px;
+}
+#sec-first .btn-start{
+	width: 192px;
+    height: 52px;
+    margin-top: 40px;
+    letter-spacing: 2px;
+}
+
+
+/* Section 2 */
+
+
+
+
+#sec-two{
+	height: 558px;
+	width: 1280px;
+	background-color: #ffffff;
+}
+#sec-two .wrapper{
+	text-align: left;
+	float:left;
+	margin-top: 139px;
+	margin-left: 330px;
+}
+#sec-two aside{
+	float: left;
+	margin-top: 147px;
+	margin-left: 125px;
+}
+#sec-two h2{
+	color: #16a085;
+	font-family: GothmRoundedBold;
+	font-size: 18px;
+    margin-left: -2px;
+    letter-spacing: 2px;
+}
+#sec-two p{
+	color:#373737;
+	font-size: 12px;
+	font-family: GothmRoundedBook;
+
+    line-height: 22px;
+    margin-top: 35px;
+    letter-spacing: 1.9px;
+}
+#sec-two .btn-start{
+    width: 192px;
+    height: 52px;
+    margin-top: 36px;
+    margin-left: -2px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+#sec-two strong{
+	font-family: GothmRoundedBold;
+}
+#sec-two .num{
+	font-family: GothmRoundedBold;
+	font-size: 12px;	
+    letter-spacing: 1.4px;    
+    margin-bottom: 4px;
+}
+#sec-two .slider{
+	margin-top: 20px;
+}
+.slider button{
+	width:10px;
+	height:16px;
+	border:none;
+	display: block;
+	float:left;
+	background: url(../images/buttons.png) no-repeat 0 0;
+}
+#slider-right{
+	background-position: -32px 0;
+	margin-left: 22px;
+}
+
+
+
+
+/* Section 3 */
+
+
+
+
+
+#sec-three{
+	height: 484px;
+	width: 1280px;
+	background-color: #f5f6f7
+}
+#sec-three .sec3wrap{
+	margin-top: 91px;
+	margin-right: 130px;
+	float: right;
+}
+.to-right{
+	width: 1152px;
+	height: 26px;
+}
+.to-right button{
+	float: right;
+}
+#right-btn{
+	background-position: -32px 0;
+	margin-left: 18px;
+}
+#sec-three .text-wrapper{
+	width: 385px;
+	text-align: center;
+}
+#sec-three .wrapper{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+#sec-three .text-wrapper{
+	height: 244px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#sec-three h2{
+	color: #373737;
+	font-size: 16px;
+	font-family: GothmRoundedBold;
+	margin-top: 30px;
+    margin-left: 45px;
+    letter-spacing: 2.4px;
+}
+#sec-three p{
+	font-family: GothmRoundedMedium;
+    font-size: 10px;
+    margin-top: 20px;
+    color: #373737;
+    margin-bottom: 15px;
+    margin-left: 45px;
+    letter-spacing: 1px;
+    line-height: 10px;
+}
+#sec-tree img{
+	width: 370px;
+	height: 244px;
+}
+#img-bus{
+	margin-right: 25px;
+}
+#sec-three .camera-logo{
+    margin-top: 11px;
+    margin-left: 45px;
+}
+/* Section 4 */
+
+
+
+#sec-four{
+	width: 1280px;
+	height: 790px;	
+	background: url(../images/back4.jpg);
+	background-size: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#sec-four h2{
+	color: #ffffff;
+	font-size: 24px;
+	font-family: GothmRoundedBold;
+	    letter-spacing: 3.7px;
+}
+#sec-four input[type="email"]{
+    width: 280px;
+    height: 58px;
+}
+
+#sec-four input[type="submit"] {
+    margin-left: -5px;
+    color: transparent;
+    height: 60px;
+    width: 63x;
+    background: url(../images/ok.png) no-repeat 0 0;
+    border: none;
+    border-radius: 3px;
+}
+#sec-four .mail-form{
+	margin-top: 30px;
+    margin-bottom: -20px;
+}
+
+.camera-logo{
+	width: 59px;
+	height: 55px;
+	border: none;
+}
+
+::-webkit-input-placeholder { 
+	color:#373737; 
+	font-family: GothmRoundedMedium;
+	padding-left: 20px;
+	letter-spacing: 2px;
+	font-size: 16px; }
+::-moz-placeholder {  
+	color:#373737; 
+	font-family: GothmRoundedMedium;
+	letter-spacing: 2px;
+	padding-left: 20px;
+	font-size: 16px;  }
+:-ms-input-placeholder {
+	color:#373737; 
+	font-family: GothmRoundedMedium;
+	letter-spacing: 2px;
+	padding-left: 20px;
+	font-size: 16px;  }
+input:-moz-placeholder {  
+	color:#373737; 
+	font-family: GothmRoundedMedium;
+	letter-spacing: 2px;
+	padding-left: 20px;
+	font-size: 16px; }
+
+
+
+
+/* Section 5 */
+
+
+
+
+#sec-five{
+	width: 1280px;
+	height: 396px;
+	background-color: #f5f6f7;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+	color: #373737;
+	text-align: center;
+}
+#sec-five h2{
+	font-family: GothmRoundedBold;
+	    font-size: 20px;
+    margin-top: -30px;
+    letter-spacing: 3px;
+}
+#sec-five p{
+	font-family: GothmRoundedMedium;
+    font-size: 12px;
+    margin-top: 7px;
+    margin-bottom: 41px;
+    line-height: 21px;
+    letter-spacing: 1.9px;
+}
+#sec-five .big{
+	width: 298px;
+	height: 56px;
+	border-radius: 5px;
+	border: none;
+	background-color: #1abc9c;
+	background-image: url(../images/ico-apple.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	color: #ffffff;
+	font-family: GothmRoundedBold;
+	font-size: 18px;
+	text-align: left;
+    padding-left: 25px;
+    letter-spacing: 2px;
+}
+
+#sec-five .play-store{
+	background-image: url(../images/ico-android.png);
+	width: 295px;
+    margin-left: 26px;
+    margin-right: 8px;
+}
+
+
+
+/* footer */
+
+
+footer{
+	width: 1280px;
+	height: 132px;
+	background-color: #ffffff;	
+	color: #373737;
+}
+footer .wrapper{
+	float: left;
+	margin-left: 128px;
+	margin-top: 45px;
+}
+footer .copyright{
+	font-family: GothmRoundedBold;
+	font-size: 14px;
+	color: #373737;
+    margin-top: 34px;
+    letter-spacing: 2px;
+}
+footer .bottom-nav li{
+	float: left;
+	    letter-spacing: 1.2px;
+	margin-right: 10px;
+	font-family: GothmRoundedBold;
+	font-size: 14px;
+}
+.line{
+	color: #16a085;
+}
+footer .camera-logo{
+	float: right;
+	margin: 39px 128px;
+}
