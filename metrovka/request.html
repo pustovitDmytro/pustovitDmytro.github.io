@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Metrovka</title>
-  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/libs.css">
   <link rel="stylesheet" href="css/main.css">  
 </head>
 <body>
@@ -57,5 +57,22 @@
   		</form>
   	</div>
   </section>
+  <script type="text/javascript" src="js/libs.min.js"></script> 
+    <script type="text/javascript">
+      $(function() {
+        $('select').styler();
+
+        });
+    </script>
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+        document.getElementById("hoover").style.display = "none";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";document.getElementById("hoover").style.display = "block";
+      }
+    </script>
 </body>
 </html>
