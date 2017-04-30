@@ -23,7 +23,7 @@ $(function() {
             infinite: true,
             index: 0,
             arrows: true,
-            slidesVisivble: 1,
+            slidesVisible: 1,
             slidesToScroll: 1,
             swipeAble: true,
             pagination: true,
@@ -33,12 +33,14 @@ $(function() {
             var slideIndex=options.index;
         return this.each(function() {
             slider = $(this);
+            slides = [];
             var slides = $(slider).find('.'+options.slide);
-            var radios = $(slider).find('.'+options.radios);
+            //$(slides).width(""+100/options.slidesVisible+"%");
             var num = slides.length;
+            var radios = $(slider).find('.'+options.radios);
             if(options.arrows){
-            var leftArrow = $(slider).find('.'+options.leftArrow)[0];
-            var rightArrow = $(slider).find('.'+options.rightArrow)[0];
+                var leftArrow = $(slider).find('.'+options.leftArrow)[0];
+                var rightArrow = $(slider).find('.'+options.rightArrow)[0];
             }
             $(rightArrow).click(function(){
                 console.log("right-click", slideIndex);
@@ -46,21 +48,23 @@ $(function() {
             })
             $(leftArrow).click(function(){
                 console.log("left-click", slideIndex);
-                slideIndex = ShowSlide(slideIndex-2);
+                slideIndex = ShowSlide(slideIndex-2*options.slidesVisible);
             })
             ShowSlide(0);
             function ShowSlide(index){
-                if(index==num){
+                if(index>=num){
                     index=0;
                 }
-                console.log(index);
                 for (i = 0; i < num; i++) {
                     slides[i].style.display = "none";
                 }
-                slides[index].style.display = "block";
-                $(radios[index]).prop('checked', true);
+                for (i = index; i < index+options.slidesVisible; i++) {
+                    slides[i].style.display = "block";
+                    $(radios[i]).prop('checked', true);
+                }
+                
                 if(options.arrows){                   
-                    if(index == num-1){
+                    if(index >= num-options.slidesVisible){
                       rightArrow.style.visibility = "hidden";
                     } else{
                       rightArrow.style.visibility = "visible";
@@ -71,7 +75,7 @@ $(function() {
                     leftArrow.style.visibility = "visible";                       
                     }
                 }
-                return index+1;
+                return index+options.slidesVisible;
             }
             if (options.autoPlay) {
                 function aPlay() {
