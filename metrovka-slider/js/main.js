@@ -38,16 +38,17 @@ $(function() {
             //$(slides).width(""+100/options.slidesVisible+"%");
             var num = slides.length;
             var radios = $(slider).find('.'+options.radios);
+            
             if(options.arrows){
                 var leftArrow = $(slider).find('.'+options.leftArrow)[0];
                 var rightArrow = $(slider).find('.'+options.rightArrow)[0];
             }
             $(rightArrow).click(function(){
-                console.log("right-click", slideIndex);
+                
                 slideIndex = ShowSlide(slideIndex);
             })
             $(leftArrow).click(function(){
-                console.log("left-click", slideIndex);
+                
                 slideIndex = ShowSlide(slideIndex-2*options.slidesVisible);
             })
             ShowSlide(0);
@@ -104,6 +105,7 @@ $("#listing-slider-3").Slider({
 });
 $(".transparent-block").Slider({
 	slide: "transparent-slide",
+	radios: "radio-element-down",
 	arrows: false,
 	autoPlayDelay: 3
 })
