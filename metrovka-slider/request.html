@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metrovka</title>
+  <link rel="stylesheet" href="css/libs.css">
+  <link rel="stylesheet" href="css/main.css">  
+</head>
+<body>
+  <section class="request-section">
+  	<div class="request__left-text">
+  		<h2 class="element-header">Оставить заявку</h2>
+  		<p class="description-text">Нет времени искать по сайту?<br>Заполняй критерии поиска и получай акутальные объявления как только они появляются на Metrovka.</p>
+  	</div>
+  	<div class="request__form">
+  		<form action="#" method="get" id="request-form">
+  				<div class="radio-labels">
+  				<input type="radio" class="hidden radio-element" name="hidden-radio" id="request-radio-1" checked>
+  				<label for="request-radio-1" class="radio-button">Район</label>
+  				<input type="radio" name="hidden-radio" class="hidden radio-element" id="request-radio-2">
+  				<label for="request-radio-2" class="radio-button">Метро</label>
+  				</div>
+  				<div class="request-form__district">
+  					<select id="district" name="district">
+  						<option class="select_option" value="Голосеевский">Голосеевский</option>
+  						<option class="select_option" value="Деснянский">Деснянский</option>
+  						<option class="select_option" value="Дарницкий">Дарницкий</option>
+  						<option class="select_option" value="Печерский">Печерский</option>
+  						<option class="select_option" value="Подольский">Подольский</option>
+  						<option class="select_option" value="Соломенский">Соломенский</option>
+  					</select>
+  				</div>
+  				<div class="request-form__room">
+  					<h4 class="description-text">Кол-во комнат</h4>
+  					<div class="room_block">
+  						<label class="checkbox"><input type="checkbox" checked="checked">
+  							<span>1</span>
+  						</label>
+  						<label class="checkbox"><input type="checkbox"  checked="checked">
+  							<span>2</span>
+  						</label>
+  						<label class="checkbox"><input type="checkbox" >
+  							<span>3</span>
+  						</label>
+  						<label class="checkbox"><input type="checkbox" >
+  							<span>4</span>
+  						</label>
+  						<label class="checkbox"><input type="checkbox" >
+  							<span>5+</span>
+  						</label>
+  					</div> 			
+  				</div>
+  				<input class="request-form__inp-info request-form__inp" type="text" name="name-req" placeholder="Как вас зовут?">
+  				<input class="request-form__inp-info request-form__inp" type="email" name="email-req" placeholder="Email">
+  				<button class="button request-form__inp request-form__submit" type="submit">Оставить заявку</button>
+  		</form>
+  	</div>
+  </section>
+  <script type="text/javascript" src="js/libs.min.js"></script> 
+    <script type="text/javascript">
+      $(function() {
+        $('select').styler();
+
+        });
+    </script>
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+        document.getElementById("hoover").style.display = "none";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";document.getElementById("hoover").style.display = "block";
+      }
+    </script>
+</body>
+</html>
