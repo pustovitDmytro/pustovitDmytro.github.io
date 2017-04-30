@@ -1102,7 +1102,9 @@ label {
       .result__radio__indicate {
         margin-top: 40px; } }
   .result__radio__link {
-    width: 40%; }
+    width: 40%;
+    cursor: pointer;
+    z-index: 2; }
   .result__radio__next {
     display: -webkit-box;
     display: -ms-flexbox;

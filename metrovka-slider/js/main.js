@@ -48,6 +48,7 @@ $(function() {
                 console.log("left-click", slideIndex);
                 slideIndex = ShowSlide(slideIndex-2);
             })
+            ShowSlide(0);
             function ShowSlide(index){
                 if(index==num){
                     index=0;
