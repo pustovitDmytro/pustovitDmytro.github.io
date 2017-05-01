@@ -12,7 +12,7 @@
 			{ "text": "comment for item # 1 : some intresting text 7", "id" : 7 },
 			{ "text": "comment for item # 1 : some intresting text 8", "id" : 8 },
 			{ "text": "comment for item # 1 : some intresting text 9", "id" : 9 },
-			{ "text": "comment for item # 1 : some intresting text 10", "id": 10 }
+			{ "text": "comment for item # 1 : some very intresting text 10", "id": 10 }
 		]
 	},
 	{
