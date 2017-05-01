@@ -15,7 +15,7 @@ AngApp.directive('onKeyup', function() {
 });
 AngApp.controller("defaultCtrl", function($scope,$window,$http) {
 	$scope.sendRequest = function () {
-		$http.get("../data/items.json").success(function(response) {
+		$http.get("https://pustovitdmytro.github.io/empeek-test/data/items.json").success(function(response) {
 			$scope.items = response;
 			$window.localStorage.setItem(storageName, JSON.stringify($scope.items));
 		})
