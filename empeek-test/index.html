@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Main page</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/libs.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body ng-app="AngApp">
+	<div class="container" ng-controller="defaultCtrl as default">
+		<div class="block">
+			<h2 class="block__title">Items</h2>
+			<form name="itemForm" class="add-item" novalidate ng-submit="AddItem(itemForm.$valid)">
+				<input type="text" class="input-name" placeholder="Type name here.." required ng-model="item.name">
+				<button class="button button-green" type="submit">Add new</button>
+			</form>
+			<div class="items">
+			<div ng-repeat="item in items track by item.number">
+				<input type="radio" class="hidden radio-element" ng-model="$parent.active" value="{{item.number+1}}" id="radio_{{item.number}}">
+				<label class="item" for="radio_{{item.number}}">
+				<div class="item-info">
+				<strong class="item-name">{{item.name}}</strong>
+				<span class="number-green">{{item.comments.length}}</span>
+				</div>
+				<button class="button button-red" ng-click="DeleteItem(item)">Delete</button>
+				</label>
+			</div>
+			</div>
+		</div>
+		<div class="block" ng-if="(active+1)">
+			<h2 class="block__title">Comments #{{active}}</h2>
+			<div ng-repeat="comment in comments track by comment.id" ng-class="$odd ? 'pic-blue' : 'pic-orange'" >
+				<div class="comment"  ng-class="$last?'comment__last':''">
+				<div class="picture"></div>
+				<p class="comment__text">{{comment.text}}</p>
+				</div>
+			</div>
+				<form class="add-comment">
+					<div class="picture"></div>
+					<textarea type="text" class="input-comment" on-keyup="AddCommment()" keys="13" ng-model="$parent.comment"></textarea>
+				</form>
+		</div>
+	</div>	
+</body>
+</html>
